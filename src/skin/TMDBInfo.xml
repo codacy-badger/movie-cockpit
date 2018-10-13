@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2018 by dream_alpha
+-->
+<screen name="MVCTMDBInfo" position="center,170"
+	size="1220,820" title="Movie Information TMDb">
+
+	<ePixmap
+		pixmap="MovieCockpit/img/red.svg"
+		position="10,5" size="300,70" alphatest="blend" />
+	<widget backgroundColor="#9f1313" font="Regular;30"
+		halign="center" name="key_red" position="10,5"
+		foregroundColor="white" shadowColor="black" shadowOffset="-2,-2"
+		size="300,70" transparent="1" valign="center" zPosition="1" />
+
+	<ePixmap
+		pixmap="MovieCockpit/img/green.svg"
+		position="310,5" size="300,70" alphatest="blend" />
+	<widget backgroundColor="#1f771f" font="Regular;30"
+		halign="center" name="key_green" position="310,5"
+		foregroundColor="white" shadowColor="black" shadowOffset="-2,-2"
+		size="300,70" transparent="1" valign="center" zPosition="1" />
+
+	<ePixmap
+		pixmap="MovieCockpit/img/yellow.svg"
+		position="610,5" size="300,70" alphatest="blend" />
+	<widget backgroundColor="#a08500" font="Regular;30"
+		halign="center" name="key_yellow" position="610,5"
+		foregroundColor="white" shadowColor="black" shadowOffset="-2,-2"
+		size="300,70" transparent="1" valign="center" zPosition="1" />
+
+	<ePixmap
+		pixmap="MovieCockpit/img/blue.svg"
+		position="910,5" size="300,70" alphatest="blend" />
+	<widget backgroundColor="#18188b" font="Regular;30" halign="center" name="key_blue"
+		position="910,5" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2"
+		size="300,70" transparent="1" valign="center" zPosition="1" />
+
+	<eLabel backgroundColor="#818181" position="10,85" size="1200,1" />
+
+	<widget name="movie_name" position="20,90" size="1200,40"
+		font="Regular;35" valign="center"
+		foregroundColor="yellow" />
+
+	<eLabel backgroundColor="#818181" position="10,135" size="1200,1" />
+
+	<widget name="previewlist" enableWrapAround="1"
+		position="340,155" size="860,500" itemHeight="45"
+		scrollbarMode="showOnDemand" />
+	<widget name="previewcover" position="20,145" size="300,451"
+		alphatest="blend" />
+
+	<widget name="contenttxt" position="340,155" size="860,500"
+		font="Regular;30" />
+
+	<widget name="runtime" position="20,670" size="160,35"
+		font="Regular;28" foregroundColor="#000066FF" />
+	<widget name="runtimetxt" position="190,670" size="330,35"
+		font="Regular;28" />
+
+	<widget name="country" position="550,670" size="290,35"
+		font="Regular;28" foregroundColor="#000066FF" />
+	<widget name="countrytxt" position="850,670" size="340,35"
+		font="Regular;28" />
+
+	<widget name="genre" position="20,720" size="160,35"
+		font="Regular;28" foregroundColor="#000066FF" />
+	<widget name="genretxt" position="190,720" size="330,35"
+		font="Regular;28" />
+	<widget name="release" position="550,720" size="290,35"
+		font="Regular;28" foregroundColor="#000066FF" />
+	<widget name="releasetxt" position="850,720" size="340,35"
+		font="Regular;28" />
+
+	<widget name="rating" position="20,770" size="160,35"
+		font="Regular;28" foregroundColor="#000066FF" />
+	<widget name="ratingtxt" position="190,770" size="330,35"
+		font="Regular;28" />
+	<widget name="starsbg"
+		pixmap="MovieCockpit/img/starsbar_empty.svg"
+		position="550,770" size="300,30" alphatest="blend" />
+	<widget name="stars"
+		pixmap="MovieCockpit/img/starsbar_filled.svg"
+		position="550,770" size="300,30" transparent="1" zPosition="1" />
+</screen>

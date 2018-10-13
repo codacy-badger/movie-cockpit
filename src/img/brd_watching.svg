@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg9833"
+   sodipodi:docname="brd_watching.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata9839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9837" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview9835"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-4.9830508"
+     inkscape:cy="12"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9833" />
+  <path
+     d="M9.054 16.671c-1.745-.599-3.125-1.978-3.725-3.724l1.025-.128c.508 1.293 1.534 2.319 2.827 2.827l-.127 1.025zm1.946-2.671c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm0-1c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2zm-6.687.074l-1 .125c.757 2.648 2.84 4.731 5.488 5.488l.125-1c-2.194-.683-3.93-2.418-4.613-4.613zm11.333-3.892l1.025-.128c-.6-1.746-1.979-3.125-3.725-3.725l-.128 1.025c1.293.508 2.32 1.535 2.828 2.828zm8.354 9.318c0 3.037-2.463 5.5-5.5 5.5s-5.5-2.463-5.5-5.5 2.463-5.5 5.5-5.5 5.5 2.463 5.5 5.5zm-6-2.5h-1v5h1v-5zm2 0h-1v5h1v-5zm-1.313-7.198c-.756-2.649-2.839-4.732-5.488-5.489l-.125 1c2.195.682 3.931 2.418 4.613 4.613l1-.124zm-7.687 11.198c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9l-.008.15c.695.141 1.354.382 1.965.701.022-.282.043-.564.043-.851 0-6.075-4.925-11-11-11s-11 4.925-11 11 4.925 11 11 11c.287 0 .569-.021.851-.043-.319-.611-.56-1.27-.701-1.965l-.15.008z"
+     id="path9831"
+     style="fill:#ffffff" />
+</svg>

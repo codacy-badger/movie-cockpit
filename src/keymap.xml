@@ -1,0 +1,124 @@
+﻿<keymap>
+	<map context="MVCConfigActions">
+		<key id="KEY_RED" mapto="red" flags="m" />
+		<key id="KEY_GREEN" mapto="green" flags="m" />
+		<key id="KEY_YELLOW" mapto="yellow" flags="m" />
+		<key id="KEY_BLUE" mapto="blueshort" flags="b" />
+		<key id="KEY_BLUE" mapto="bluelong" flags="l" />
+		<key id="KEY_UP" mapto="up" flags="mr" />
+		<key id="KEY_DOWN" mapto="down" flags="mr" />
+		<key id="KEY_CHANNELUP" mapto="nextBouquet" flags="mr" />
+		<key id="KEY_CHANNELDOWN" mapto="prevBouquet" flags="mr" />
+	</map>
+	<map context="MVCPlayerActions">
+		<key id="KEY_POWER" mapto="leavePlayer" flags="m" />
+		<key id="KEY_TV" mapto="leavePlayer" flags="m" />
+		<key id="KEY_STOP" mapto="leavePlayer" flags="m" />
+		<key id="\x1b" mapto="leavePlayer" flags="m" />
+		<key id="KEY_EXIT" mapto="leavePlayer" flags="m" />
+		<key id="KEY_HOME" mapto="leavePlayer" flags="m" />
+		<key id="KEY_ESC" mapto="leavePlayer" flags="m" />
+	</map>
+	<map context="MVCPlayerActions2">
+		<key id="KEY_POWER" mapto="leavePlayer" flags="m" />
+		<key id="KEY_TV" mapto="leavePlayer" flags="m" />
+		<key id="KEY_STOP" mapto="leavePlayer" flags="m" />
+		<key id="KEY_HOME" mapto="leavePlayer" flags="m" />
+	</map>
+	<map context="MVCGeneralPlayerActions">
+		<key id="KEY_RADIO" mapto="showExtensions" flags="b" />
+		<key id="KEY_GREEN" mapto="MVCGreen" flags="m" />
+		<key id="KEY_INFO" mapto="movieInfo" flags="b" />
+		<key id="KEY_EPG" mapto="movieInfo" flags="b" />
+		<!--key id="KEY_CHANNELUP" mapto="nextTitle" flags="l" />
+		<key id="KEY_CHANNELDOWN" mapto="prevTitle" flags="l" /-->
+<!--  With "KEY_LEFT" & "KEY_RIGHT" at map "MVCDVDPlayerActions" works also in the regular player.
+		<key id="KEY_LEFT" mapto="seekBack" flags="b" />
+		<key id="KEY_RIGHT" mapto="seekFwd" flags="b" />
+-->
+	</map>
+	<!--map context="MVCDVDPlayerActions">
+		<key id="KEY_MENU" mapto="dvdMenu" flags="mr" />
+		<key id="KEY_CHANNELUP" mapto="nextChapter" flags="b" />
+		<key id="KEY_CHANNELDOWN" mapto="prevChapter" flags="b" />
+		<key id="KEY_CHANNELUP" mapto="nextTitle" flags="l" />
+		<key id="KEY_CHANNELDOWN" mapto="prevTitle" flags="l" />
+		<key id="KEY_AUDIO" mapto="dvdAudioMenu" flags="l" />
+		<key id="KEY_RADIO" mapto="dvdAudioMenu" flags="l" />
+		<key id="KEY_RADIO" mapto="nextAudioTrack" flags="b" />
+		<key id="KEY_TEXT" mapto="nextSubtitleTrack" flags="m" />
+		<key id="KEY_VIDEO" mapto="nextAngle" flags="m" />
+		<key id="KEY_LEFT" mapto="left" flags="m" />
+		<key id="KEY_RIGHT" mapto="right" flags="m" />
+	</map-->
+	<map context="PluginMovieSelectionActions">
+		<key id="\x0a" mapto="MVCOK" flags="m" />
+		<key id="\x1b" mapto="MVCEXIT" flags="m" />
+		<key id="KEY_POWER" mapto="MVCEXIT" flags="m" />
+		<key id="KEY_OK" mapto="MVCOK" flags="m" />
+		<key id="KEY_PLAY" mapto="MVCPLAY" flags="b" />
+		<key id="KEY_PLAY" mapto="MVCSHUFFLE" flags="l" />
+		<key id="KEY_PLAYPAUSE" mapto="MVCPLAY" flags="m" />
+		<key id="KEY_EXIT" mapto="MVCEXIT" flags="m" />
+		<key id="KEY_HOME" mapto="MVCEXIT" flags="m" />
+		<key id="KEY_ESC" mapto="MVCEXIT" flags="m" />
+		<key id="KEY_ENTER" mapto="MVCOK" flags="m" />
+
+		<key id="KEY_MENU" mapto="MVCMENU" flags="b" />
+		<key id="KEY_INFO" mapto="MVCINFO" flags="b" />
+		<key id="KEY_EPG" mapto="MVCINFO" flags="b" />
+		<key id="KEY_MENU" mapto="MVCMENUL" flags="l" />
+		<key id="KEY_INFO" mapto="MVCINFOL" flags="l" />
+		<key id="KEY_EPG" mapto="MVCINFOL" flags="l" />
+
+		<key id="KEY_RED" mapto="MVCRed" flags="b" />
+		<key id="KEY_RED" mapto="MVCREDL" flags="l" />
+		<key id="KEY_GREEN" mapto="MVCGREEN" flags="b" />
+		<key id="KEY_GREEN" mapto="MVCGREENL" flags="l" />
+		<key id="KEY_YELLOW" mapto="MVCYELLOW" flags="b" />
+		<key id="KEY_YELLOW" mapto="MVCYELLOWL" flags="l" />
+		<key id="KEY_BLUE" mapto="MVCBLUE" flags="b" />
+		<key id="KEY_BLUE" mapto="MVCBlueL" flags="l" />
+
+		<key id="KEY_VIDEO" mapto="MVCVIDEOB" flags="b" />
+		<key id="KEY_PVR" mapto="MVCVIDEOB" flags="b" />
+		<key id="KEY_FILE" mapto="MVCVIDEOB" flags="m" />
+		<key id="KEY_VIDEO" mapto="MVCVIDEOL" flags="l" />
+		<key id="KEY_PVR" mapto="MVCVIDEOL" flags="l" />
+		<key id="KEY_AUDIO" mapto="MVCAUDIO" flags="m" />
+		<key id="KEY_STOP" mapto="MVCAUDIO" flags="m" />
+		<key id="KEY_TV" mapto="MVCTV" flags="b" />
+		<key id="KEY_TV" mapto="MVCTVL" flags="l" />
+		<key id="KEY_RADIO" mapto="MVCRADIO" flags="m" />
+		<key id="KEY_SUBTITLE" mapto="MVCRADIO" flags="m" />
+		<key id="KEY_TEXT" mapto="MVCTEXT" flags="m" />
+		<key id="KEY_LEFT" mapto="MVCLeft" flags="mr" />
+		<key id="KEY_RIGHT" mapto="MVCRight" flags="mr" />
+		<key id="KEY_UP" mapto="MVCUp" flags="mr" />
+		<key id="KEY_DOWN" mapto="MVCDown" flags="mr" />
+		<key id="KEY_NEXT" mapto="MVCArrowNext" flags="b" />
+		<key id="KEY_PREVIOUS" mapto="MVCArrowPrevious" flags="b" />
+		<key id="KEY_CHANNELUP" mapto="MVCBqtPlus" flags="m" />
+		<key id="KEY_CHANNELDOWN" mapto="MVCBqtMnus" flags="m" />
+		<key id="KEY_0" mapto="0" flags="m" />
+		<key id="KEY_4" mapto="4" flags="m" />
+		<key id="KEY_7" mapto="7" flags="m" />
+		<key id="KEY_8" mapto="8" flags="m" />
+		<key id="KEY_9" mapto="9" flags="m" />
+	</map>
+	<map context="TMDBInfo">
+		<key id="\x0a" mapto="MVCOK" flags="m" />
+		<key id="\x1b" mapto="MVCEXIT" flags="m" />
+		<key id="KEY_EXIT" mapto="MVCEXIT" flags="m" />
+		<key id="KEY_OK" mapto="MVCOK" flags="m" />
+		<key id="KEY_INFO" mapto="MVCINFO" flags="b" />
+		<key id="KEY_EPG" mapto="MVCINFO" flags="b" />
+		<key id="KEY_MENU" mapto="MVCMenu" flags="m" />
+		<key id="KEY_GREEN" mapto="MVCGreen" flags="m" />
+		<key id="KEY_YELLOW" mapto="MVCYellow" flags="m" />
+		<key id="KEY_BLUE" mapto="MVCBlue" flags="m" />
+		<key id="KEY_RED" mapto="MVCRed" flags="b" />
+		<key id="KEY_UP" mapto="MVCUp" flags="m" />
+		<key id="KEY_DOWN" mapto="MVCDown" flags="m" />
+	</map>
+</keymap>

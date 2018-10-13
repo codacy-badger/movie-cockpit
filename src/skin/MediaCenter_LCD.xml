@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2018 by dream_alpha
+-->
+<skin>
+	<!-- OLED screen DM800se Color display -->
+	<screen id="2" name="MVCSelectionSummary" position="0,0"
+		size="96,64">
+		<widget font="Display;15" halign="center" valign="center"
+			position="1,0" render="Label" size="94,34" source="parent.Service">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget font="Display;15" halign="center" valign="center"
+			position="1,0" render="Label" transparent="1" zPosition="2"
+			size="94,34" source="parent.name_disp" />
+		<widget font="Display;14" halign="center" valign="center"
+			position="1,35" render="Label" size="94,28" source="parent.spacefree" />
+	</screen>
+	<screen id="2" name="MVCMoviePlayerSummary" position="0,0"
+		size="96,64">
+		<!-- Movie name -->
+		<widget source="session.CurrentService" render="Label"
+			position="0,-3" size="96,40" font="Display;17"
+			foregroundColor="#FFFF00" halign="center" valign="top">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<!-- Movie progress -->
+		<widget source="Service" render="Progress" position="1,38"
+			size="94,8" zPosition="2"
+			pixmap="MovieCockpit/img/progress.png"
+			transparent="1">
+			<convert type="MVCServicePosition">Position</convert>
+		</widget>
+		<!-- Movie recording progress -->
+		<widget source="Service" render="Progress" position="1,38"
+			size="94,8" zPosition="1"
+			pixmap="MovieCockpit/img/progress_rec.png"
+			transparent="1">
+			<convert type="MVCRecordPosition">Position</convert>
+		</widget>
+		<!-- Progress border -->
+		<eLabel position="0,37" size="96,1" backgroundColor="#3D3DFF" />
+		<eLabel position="0,37" size="1,10" backgroundColor="#3D3DFF" />
+		<eLabel position="95,37" size="1,10" backgroundColor="#3D3DFF" />
+		<eLabel position="0,47" size="96,1" backgroundColor="#3D3DFF" />
+		<!-- Current time -->
+		<widget source="global.CurrentTime" render="Label"
+			position="0,48" size="48,16" font="Display;16" halign="left">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<!-- Recording indicator -->
+		<widget source="session.RecordState" render="FixedLabel"
+			text="REC" foregroundColor="#FF0000" position="0,48" size="48,16"
+			font="Display;16" halign="center" zPosition="1">
+			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean
+			</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<!-- Remaining movie time -->
+		<widget source="session.CurrentService" render="Label"
+			position="48,48" size="48,16" font="Display;16"
+			foregroundColor="#FFFF00" halign="right">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours,ShowNoSeconds
+			</convert>
+		</widget>
+	</screen>
+	<!-- MVC Selection screen DM9... and Buck Color display -->
+	<screen id="3" name="MVCSelectionSummary" position="0,0"
+		size="400,240">
+		<ePixmap position="0,0" size="400,240"
+			pixmap="skin_default/display_bg.png" zPosition="-1" />
+		<widget font="Display;60" foregroundColor="#faff00"
+			halign="center" position="5,5" render="Label" size="390,120"
+			source="parent.Service" valign="center" transparent="1">
+			<convert type="MVCEventName">Name</convert>
+		</widget>
+		<eLabel backgroundColor="white" position="10,145" size="380,2" />
+		<widget font="Display;75" position="5,160" render="Label"
+			size="210,75" source="parent.Service" transparent="1" valign="center">
+			<convert type="MVCMovieInfo">FileSize</convert>
+		</widget>
+		<widget font="Display;75" halign="right" position="225,160"
+			render="Label" size="170,75" source="parent.Service" transparent="1"
+			valign="center">
+			<convert type="MVCServiceTime">Duration</convert>
+			<convert type="MVCClockToText">InMinutes</convert>
+		</widget>
+	</screen>
+	<!-- MVC MoviePlayer screen DM9... and Buck Color display -->
+	<screen id="3" name="MVCMoviePlayerSummary" position="0,0"
+		size="400,240">
+		<ePixmap position="0,0" size="400,240"
+			pixmap="skin_default/display_bg.png" zPosition="-1" />
+		<widget font="Display;60" halign="center" position="5,5"
+			render="Label" size="390,120" source="session.Event_Now"
+			valign="center" transparent="1">
+			<convert type="MVCEventName">Name</convert>
+		</widget>
+		<widget source="Service" render="Progress"
+			position="center,140" size="380,15" borderWidth="1" zPosition="1"
+			pixmap="MovieCockpit/img/progress_rec_lcd.png"
+			transparent="1">
+			<convert type="MVCRecordPosition">Position</convert>
+		</widget>
+		<widget position="center,140" render="Progress" size="380,15"
+			borderWidth="1" source="Service" zPosition="2" transparent="1"
+			pixmap="MovieCockpit/img/progress_lcd.png">
+			<convert type="MVCServicePosition">Position</convert>
+		</widget>
+		<widget font="Display;75" valign="center" position="5,160"
+			render="Label" size="200,80" source="global.CurrentTime"
+			transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget font="Display;75" valign="center" halign="right"
+			position="200,160" render="Label" size="195,80" source="Service"
+			transparent="1">
+			<convert type="MVCServicePosition">Remaining,ShowNoSeconds</convert>
+		</widget>
+	</screen>
+</skin>
